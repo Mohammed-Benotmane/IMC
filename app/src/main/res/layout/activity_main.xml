@@ -13,11 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="84dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:hint="Taille en cm"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -27,11 +28,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="84dp"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="47dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Poids"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taille" />
 
@@ -41,10 +43,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="112dp"
         android:layout_marginStart="112dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="92dp"
         android:text="IMC Calcule"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,11 +57,12 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="144dp"
         android:layout_marginStart="148dp"
-        android:layout_marginTop="63dp"
-        android:text="Calculer"
-        android:background="@drawable/shape"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/shapebutton"
         android:onClick="calculer"
+        android:text="Calculer"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/poids" />
 </android.support.constraint.ConstraintLayout>
