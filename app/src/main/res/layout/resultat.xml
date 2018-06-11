@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/shape">
 
     <TextView
         android:id="@+id/textView2"
@@ -89,6 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="127dp"
+        android:background="@drawable/shape"
         android:layout_marginStart="129dp"
         android:layout_marginTop="37dp"
         android:text="Me Conseiller"

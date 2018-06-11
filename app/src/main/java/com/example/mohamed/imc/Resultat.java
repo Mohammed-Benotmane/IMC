@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by mohamed on 30/03/18.
@@ -27,7 +28,6 @@ public class Resultat extends AppCompatActivity {
         double taille = Double.parseDouble(moha.getStringExtra(a))/100;
         double poids = Double.parseDouble(moha.getStringExtra(b));
         double res = (int)((poids / (taille * taille))*100);
-
         res = res/100;
         imc.setText(Double.toString(res));
         if(res<18.5){
