@@ -11,3 +11,9 @@ and the weight you have to loste
 ![35082814_10216743464003408_793388722811830272_n](https://user-images.githubusercontent.com/39698080/41208527-d7ff32ca-6d24-11e8-82c0-7500fd1cd1d4.png)
 
 I will improve the app more and more
+
+## Change Background
+![orange](https://user-images.githubusercontent.com/39698080/41297860-653a09e4-6e60-11e8-8178-44f98e3100fe.jpg)
+
+
+![orangepref](https://user-images.githubusercontent.com/39698080/41297861-65743b1e-6e60-11e8-9bc9-3593b50a5d41.jpg)
