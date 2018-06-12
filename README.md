@@ -13,7 +13,8 @@ and the weight you have to loste
 I will improve the app more and more
 
 ## Change Background
-![orange](https://user-images.githubusercontent.com/39698080/41297860-653a09e4-6e60-11e8-8178-44f98e3100fe.jpg)
+
+![35151492_10216754005226932_7957094461131980800_n](https://user-images.githubusercontent.com/39698080/41298048-d7b909ac-6e60-11e8-9c60-f6749cb1d9f3.png)
 
 
-![orangepref](https://user-images.githubusercontent.com/39698080/41297861-65743b1e-6e60-11e8-9bc9-3593b50a5d41.jpg)
+![35180988_10216754005346935_525005815736696832_n](https://user-images.githubusercontent.com/39698080/41298049-d8115e9a-6e60-11e8-87b3-c52e4d28a119.png)
