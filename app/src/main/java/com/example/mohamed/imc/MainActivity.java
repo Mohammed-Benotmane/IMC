@@ -1,11 +1,18 @@
 package com.example.mohamed.imc;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +24,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        String str = sharedPreferences.getString("listpref","");
+        ConstraintLayout layout = (ConstraintLayout)findViewById(R.id.back);
+
+        switch (str){
+            case "Bleu":
+                layout.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+                break;
+            case "Orange":
+                layout.setBackgroundColor(getResources().getColor(R.color.orange));
+                break;
+            case "Rouge":
+                layout.setBackground(getResources().getDrawable(R.drawable.shapepref));
+                break;
+        }
 
     }
 
@@ -56,5 +78,26 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(a,taille.getText().toString());
         intent.putExtra(b,poids.getText().toString());
         startActivity(intent);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.pref:
+                Intent intent = new Intent(MainActivity.this,Preference.class);
+                startActivity(intent);
+                return true;
+            case R.id.exit:
+                finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

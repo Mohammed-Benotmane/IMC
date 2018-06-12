@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceCategory android:title="Réseau">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="check_box_preference_1"
+        android:title="Check box preference"
+        android:summaryOn="selectionné"
+        android:summaryOff="pas selectionné"
+        />
+    <EditTextPreference
+        android:defaultValue="Default value"
+        android:key="edit_text_preference_1"
+        android:dialogTitle="Entrez votre nom"
+        android:positiveButtonText="Enregistrer"
+        android:negativeButtonText="Annuler"
+        android:selectAllOnFocus="true"
+        android:summary="résumé"
+        android:dependency="check_box_preference_1"
+        android:singleLine="true"
+        android:title="Edit text preference" />
+</PreferenceCategory>
+
+    <PreferenceCategory android:title="Couleurs">
+        <ListPreference
+            android:key="listpref"
+            android:dialogTitle="Choisissez une couleur"
+            android:entries="@array/liste_couleur"
+            android:entryValues="@array/liste_couleur"
+            android:title="choisir couleur"
+            />
+
+
+    </PreferenceCategory>
+</PreferenceScreen>

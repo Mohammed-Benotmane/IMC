@@ -22,6 +22,9 @@
         <activity android:name=".Maigre">
 
         </activity>
+        <activity android:name=".Preference">
+
+        </activity>
     </application>
 
 </manifest>
